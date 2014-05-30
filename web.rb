@@ -6,7 +6,15 @@ class App < Sinatra::Base
     register Sinatra::Twitter::Bootstrap::Assets
 
     get '/' do
-        slim :login
+        slim :apply
+    end
+
+    get '/apply' do
+        slim :apply
+    end
+
+    get '/candidate_details/:encoded_id' do
+        slim :candidate_details
     end
 
     get '/login' do

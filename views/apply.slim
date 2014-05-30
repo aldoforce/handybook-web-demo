@@ -1,0 +1,60 @@
+form.form-horizontal
+  fieldset
+    /! Form Name
+    legend Get Started Now
+    /! Text input
+    .control-group
+      label.control-label for="email"  Email
+      .controls
+        input#email.input-large name="email" placeholder="your@email.com" required="" type="text" 
+    /! Select Basic
+    .control-group
+      label.control-label for="location"  Location
+      .controls
+        select#location.input-large name="location" 
+          option Boston
+          option New York
+          option San Francisco
+          option DC
+          option Chicago
+          option Philadelphia
+          option LA
+          option Miami
+          option Seattle
+          option San Diego
+          option Atlanta
+          option Houston
+          option Dallas
+          option Westchester
+          option Sacramento
+          option Portland
+          option Baltimore
+          option Orlando
+          option Tampa
+          option Austin
+          option Phoenix
+          option Las Vegas
+          option San Jose
+          option Denver
+          option Toronto
+          option San Antonio
+          option South Bay (SF)
+          option East Bay (SF)
+          option Vancouver
+          option London
+          option Hamptons
+    /! Multiple Radios
+    .control-group
+      label.control-label for="apply_as_a"  Apply as a
+      .controls
+        label.radio for="apply_as_a-0" 
+          input#apply_as_a-0 checked="checked" name="apply_as_a" type="radio" value="Cleaner" 
+            | Cleaner
+        label.radio for="apply_as_a-1" 
+          input#apply_as_a-1 name="apply_as_a" type="radio" value="Handyman" 
+            | Handyman
+    /! Button
+    .control-group
+      label.control-label for="begin_application" 
+      .controls
+        button#begin_application.btn.btn-primary name="begin_application"  Begin Application
