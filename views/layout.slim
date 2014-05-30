@@ -1,6 +1,26 @@
 html
-    head
-        == bootstrap_assets
-    body
-        .container
-            == yield
+  head
+  	title Handybook web demo
+    == bootstrap_assets
+    css:
+    	
+    	body {
+    		margin: 0;
+    		background-image: url('')
+    	}
+  body
+  	div class="navbar navbar-inverse" role="navigation"
+  		.navbar-inner
+	  		a href="/" class="brand" Handybook Demo
+	  		ul class="nav pull-right" 
+	  			li class="active" 
+	  				a[href="/login"] login
+	  			li
+	  				a[href="/signup"] signup
+	  			
+	
+		/! ------------ main ------------
+    .container
+    	== yield
+
+

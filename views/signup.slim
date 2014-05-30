@@ -1,0 +1,33 @@
+.lead Sign up form
+form.form-horizontal
+  fieldset
+    /! Form Name
+    legend Form Name
+    /! Text input
+    .control-group
+      label.control-label for="textinput"  Text Input
+      .controls
+        input#textinput.input-xlarge name="textinput" placeholder="placeholder" type="text" 
+          p.help-block help
+    /! Select Basic
+    .control-group
+      label.control-label for="selectbasic"  Select Basic
+      .controls
+        select#selectbasic.input-xlarge name="selectbasic" 
+          option Option one
+          option Option two
+    /! Multiple Checkboxes
+    .control-group
+      label.control-label for="checkboxes"  Multiple Checkboxes
+      .controls
+        label.checkbox for="checkboxes-0" 
+          input#checkboxes-0 name="checkboxes" type="checkbox" value=("Option one") 
+            | Option one
+        label.checkbox for="checkboxes-1" 
+          input#checkboxes-1 name="checkboxes" type="checkbox" value=("Option two") 
+            | Option two
+    /! Button
+    .control-group
+      label.control-label for="singlebutton"  Single Button
+      .controls
+        button#singlebutton.btn.btn-primary name="singlebutton"  Button
