@@ -1,4 +1,4 @@
-form.form-horizontal
+form.form-horizontal action="/create_candidate" method="post"
   fieldset
     /! Form Name
     legend Get Started Now
@@ -6,7 +6,7 @@ form.form-horizontal
     .control-group
       label.control-label for="email"  Email
       .controls
-        input#email.input-large name="email" placeholder="your@email.com" required="" type="text" 
+        input#email.input-large name="email" placeholder="your@email.com" required="true" type="text" 
     /! Select Basic
     .control-group
       label.control-label for="location"  Location
@@ -45,13 +45,13 @@ form.form-horizontal
           option Hamptons
     /! Multiple Radios
     .control-group
-      label.control-label for="apply_as_a"  Apply as a
+      label.control-label for="apply_as"  Apply as a
       .controls
-        label.radio for="apply_as_a-0" 
-          input#apply_as_a-0 checked="checked" name="apply_as_a" type="radio" value="Cleaner" 
+        label.radio for="apply_as-0" 
+          input#apply_as-0 checked="checked" name="apply_as" type="radio" value="Cleaner" 
             | Cleaner
-        label.radio for="apply_as_a-1" 
-          input#apply_as_a-1 name="apply_as_a" type="radio" value="Handyman" 
+        label.radio for="apply_as-1" 
+          input#apply_as-1 name="apply_as" type="radio" value="Handyman" 
             | Handyman
     /! Button
     .control-group

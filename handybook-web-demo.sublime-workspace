@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"encode",
+				"encoded_id"
+			],
+			[
+				"test",
+				"test"
+			],
+			[
 				"pol",
 				"policyID"
 			],
@@ -484,10 +492,6 @@
 				"Incident__c"
 			],
 			[
-				"test",
-				"testmethod	ApexTestMethod"
-			],
-			[
 				"Hold",
 				"Hold_Reason__c"
 			],
@@ -510,30 +514,30 @@
 			[
 				"Inciden",
 				"Incident__c"
-			],
-			[
-				"C",
-				"Customer_Communication__c"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "web.rb",
-			"settings":
-			{
-				"buffer_size": 193,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 47.0,
+		"height": 167.0,
 		"selected_items":
 		[
+			[
+				"add re",
+				"Package Control: Add Repository"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
 			[
 				"new tri",
 				"MavensMate: New Apex Trigger"
@@ -667,10 +671,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"packa",
-				"Package Control: Install Package"
-			],
-			[
 				"Package Control: ins",
 				"Package Control: Install Package"
 			],
@@ -731,10 +731,6 @@
 				"Github: Open File"
 			],
 			[
-				"package",
-				"Package Control: Add Repository"
-			],
-			[
 				"instal",
 				"Package Control: Install Package"
 			],
@@ -743,7 +739,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 539.0
+		"width": 530.0
 	},
 	"console":
 	{
@@ -763,6 +759,20 @@
 	},
 	"file_history":
 	[
+		"/Users/aldo/dev/handybook_web/web.rb",
+		"/Users/aldo/dev/handybook_web/lib/Salesforce_Connector.rb",
+		"/Users/aldo/dev/handybook_web/views/apply.slim",
+		"/Users/aldo/dev/handybook_web/views/candidate_details.slim",
+		"/Users/aldo/dev/wework.com.dev/rest_client/request_opportunityDetails.rb",
+		"/Users/aldo/dev/handybook_web/Gemfile",
+		"/Users/aldo/dev/handybook_web/views/login.slim",
+		"/Users/aldo/dev/handybook_web/views/signup.slim",
+		"/Users/aldo/dev/handybook_web/views/hello.slim",
+		"/Users/aldo/dev/handybook_web/views/layout.slim",
+		"/Users/aldo/dev/handybook_web/config.ru",
+		"/Users/aldo/dev/handybook_web/.bundle/install.log",
+		"/Users/aldo/dev/handybook_web/handybook-web-demo.sublime-project",
+		"/Users/aldo/dev/handybook_web/README.md",
 		"/Users/aldo/dev/spring.com.dev/src/classes/TestLeadAppPolicyJunction.cls",
 		"/Users/aldo/dev/spring.com.dev/src/triggers/LeadAppPolicyTaskJunction.trigger",
 		"/Users/aldo/dev/spring.com.dev/src/triggers/LeadRelatedTask.trigger",
@@ -876,21 +886,7 @@
 		"/Volumes/Perseus/salesforce/portal/classes/PortalInventoryHandler.class.php",
 		"/Users/aldo/dev/perseus3.dev/src/components/OrdersHistory.component",
 		"/Users/aldo/dev/perseus3.dev/src/classes/OrdersHistoryController.cls",
-		"/Users/aldo/dev/perseus3.dev/src/pages/Order.page",
-		"/Users/aldo/dev/perseus3.live/src/pages/Order.page",
-		"/home/aldo/dev/perseus3.live/src/objects/Inventory__c.object",
-		"/home/aldo/Downloads/Homeland.S01/Homeland.S01E01.HDTV.XviD-ASAP.[VTV].srt",
-		"/home/aldo/dev/perseus3.sandbox/src/triggers/OrdersProductNumbering.trigger",
-		"/home/aldo/dev/perseus3.sandbox/cherrypick/ProductID_Update.workflow.3",
-		"/home/aldo/dev/perseus3.sandbox/src/classes/AccountUpsertController.cls",
-		"/home/aldo/dev/perseus3.sandbox/src/classes/TypesServices.cls",
-		"/home/aldo/dev/perseus3.sandbox/src/classes/IncidentExtensionController.cls",
-		"/home/aldo/dev/perseus3.sandbox/src/classes/AccountAuthorisedAccessController.cls",
-		"/home/aldo/dev/perseus3.sandbox/src/classes/OrderAuthorisedAccessController.cls",
-		"/home/aldo/dev/perseus3.sandbox/src/pages/Order.page",
-		"/home/aldo/dev/perseus3.sandbox/src/classes/OrderExtensionController.cls",
-		"/home/aldo/dev/perseus3.sandbox/src/staticresources/Common.resource",
-		"/tmp/fz3temp-1/sign.php"
+		"/Users/aldo/dev/perseus3.dev/src/pages/Order.page"
 	],
 	"find":
 	{
@@ -910,6 +906,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"option ",
+			"apply_as_a",
+			"\"",
+			"\">",
+			"</option>",
+			"<option value=",
+			"navbar",
 			".notes",
 			"notes",
 			"NotesResult",
@@ -1030,14 +1033,7 @@
 			"{!",
 			"special",
 			"details.",
-			"inputField",
-			"m.name",
-			"KBs",
-			"Body__c",
-			"subject",
-			"loadProduct",
-			"product",
-			"productID"
+			"inputField"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1085,37 +1081,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "web.rb",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 193,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								193,
-								193
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
