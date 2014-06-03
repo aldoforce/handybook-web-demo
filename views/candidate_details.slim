@@ -1,1 +1,85 @@
-{encoded_id}
+form.form-horizontal action="/candidate_update" method="post"
+  fieldset
+    /! Form Name
+    legend Application details
+    /! Text input
+    .control-group
+      label.control-label for="professional_cleaning_experience"  Do you have professional cleaning experience?
+      .controls
+        input#professional_cleaning_experience.input-xlarge name="professional_cleaning_experience" placeholder="how long?/when?/what?" type="text" maxlength="255" value="#{@candidate.Professional_Cleaning_Experience__c}"
+    /! Select Basic
+    .control-group
+      label.control-label for="years_experience"  How many years of paid experience do you have?
+      .controls
+      	input#years_experience.input-xlarge name="years_experience" placeholder="" type="text" maxlength="255" value="#{@candidate.Years_of_paid_experience__c}"        
+    /! Text input
+    .control-group
+      label.control-label for="convicted"  Have you ever been convicted of a crime?
+      .controls
+        input#convicted.input-xlarge name="convicted" placeholder="Yes/No" type="text" maxlength="255" value="#{@candidate.Have_you_ever_been_convicted_of_a_crime__c}"
+    /! Select Basic
+    .control-group
+      label.control-label for="elegible_to_work"  Are you legally eligible to work in the U.S.?
+      .controls
+      	input#elegible_to_work.input-xlarge name="elegible_to_work" placeholder="Yes/No" type="text" maxlength="255" value="#{@candidate.Are_you_eligible_to_work_in_the_US__c}"        
+    /! Select Basic
+    .control-group
+      label.control-label for="how_many_hours"  How many hours per week are you able to work?
+      .controls
+      	input#how_many_hours.input-xlarge name="how_many_hours" placeholder="5-10, 10-20, 20-30, ..." type="text" maxlength="255" value="#{@candidate.How_many_hrs_week_are_you_able_to_work__c}"        
+    /! Text input
+    .control-group
+      label.control-label for="referred"  Were you referred by someone?
+      .controls
+        input#referred.input-xlarge name="referred" placeholder="Who?" type="text" maxlength="255" value="#{@candidate.Were_you_referred_by_someone__c}"
+    /! Textarea
+    .control-group
+      label.control-label for="relevante_experience"  Relevant Experience
+      .controls
+        textarea#relevante_experience name="relevante_experience" value="#{@candidate.Relevant_Experience__c}"
+    /! Select Basic
+    .control-group
+      label.control-label for="tshirt_size"  T-Shirt Size
+      .controls
+        select#tshirt_size.input-small name="tshirt_size" 
+          option[selected=("selected" if @candidate.T_Shirt_Size__c == "Small")] Small
+          option[selected=("selected" if @candidate.T_Shirt_Size__c == "Medium")] Medium
+          option[selected=("selected" if @candidate.T_Shirt_Size__c == "Large")] Large
+          option[selected=("selected" if @candidate.T_Shirt_Size__c == "XL")] XL
+          option[selected=("selected" if @candidate.T_Shirt_Size__c == "XXL")] XXL
+    /! Select Basic
+    .control-group
+      label.control-label for="tshirt_style"  T-Shirt Style
+      .controls
+        select#tshirt_style.input-small name="tshirt_style" 
+          option[selected=("selected" if @candidate.T_Shirt_Style__c == "Male")] Male
+          option[selected=("selected" if @candidate.T_Shirt_Style__c == "Female")] Female          
+    /! Multiple Checkboxes
+    .control-group
+      label.control-label for="do_you_have"  Do you have?
+      .controls
+        label.checkbox for="do_you_have-0" 
+          input#do_you_have-0 name="do_you_have_smartphone" type="checkbox" value="true" checked=("checked" if @candidate.Smart_Phone__c)
+            | Smart phone
+        label.checkbox for="do_you_have-1" 
+          input#do_you_have-1 name="do_you_have_internet" type="checkbox" value="true" checked=("checked" if @candidate.Internet__c)
+            | Internet
+        label.checkbox for="do_you_have-2" 
+          input#do_you_have-2 name="do_you_have_car" type="checkbox" value="true" checked=("checked" if @candidate.Car__c)
+            | Car
+        label.checkbox for="do_you_have-3" 
+          input#do_you_have-3 name="do_you_have_bank_account" type="checkbox" value="true" checked=("checked" if @candidate.Bank_Account__c)
+            | Bank Account
+    /! Text input
+    .control-group
+      label.control-label for="quiz"  Quiz percentage
+      .controls
+        input#quiz.input-xlarge name="quiz" placeholder="Quiz Percentage" type="text" maxlength="255" value="#{@candidate.Quiz_Score__c}" disabled="disabled"
+
+		/! encoded_id            
+    input#encoded_id name="encoded_id" type="hidden" value="#{@encoded_id}"
+    /! Button
+    .control-group
+      label.control-label for="submit_application" 
+      .controls
+        button#submit_application.btn.btn-primary name="submit_application"  Submit Application
