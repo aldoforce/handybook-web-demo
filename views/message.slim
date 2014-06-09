@@ -1,3 +1,7 @@
 div id="failure" class=(["alert", "alert-danger", @message == nil ? "hidden" : nil].compact.join(' ')) = @message
 div id="debug" class=(["alert", "alert-warning", @info == nil ? "hidden" : nil].compact.join(' ')) = @info
 div id="success" class=(["alert", "alert-success", @success == nil ? "hidden" : nil].compact.join(' ')) = @success
+
+a href="#" class="btn btn-lg btn-primary"
+	span class="glyphicon glyphicon-check" 
+		| Ok

@@ -1,0 +1,19 @@
+form.form-horizontal action="/candidate_quiz_update" method="post"
+  fieldset
+    /! Form Name
+    legend Quiz
+
+    /! Text input
+    .control-group
+      label.control-label for="quiz"  Quiz
+      .controls
+        input#quiz.input-lg name="quiz" placeholder="0-100" type="number" min="0" max="100" step="5"
+    
+    /! encoded_id            
+    input#encoded_id name="encoded_id" type="hidden" value="#{@encoded_id}"
+    
+    /! Button
+    .control-group
+      label.control-label for="singlebutton" 
+      .controls
+        button#singlebutton.btn.btn-primary name="singlebutton"  Submit Quiz

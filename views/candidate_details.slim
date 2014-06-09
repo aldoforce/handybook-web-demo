@@ -2,6 +2,105 @@ form.form-horizontal action="/candidate_update" method="post"
   fieldset
     /! Form Name
     legend Application details
+
+    /! Text input
+    .control-group
+      label.control-label for="firstname"  First Name
+      .controls
+        input#firstname.input-xlarge name="firstname" placeholder="" type="text" value="#{@candidate.FirstName}"
+    /! Text input
+    .control-group
+      label.control-label for="lastname"  Last Name
+      .controls
+        input#lastname.input-xlarge name="lastname" placeholder="" required="" type="text" value="#{@candidate.LastName}"
+    /! Text input
+    .control-group
+      label.control-label for="phone"  Phone
+      .controls
+        input#phone.input-xlarge name="phone" placeholder=("(212) 555-1234") type="text" value="#{@candidate.Phone_Reformat__c}"
+    /! Text input
+    .control-group
+      label.control-label for="street"  Mailing Street
+      .controls
+        input#street.input-xlarge name="street" placeholder=("123 Lexington Avenue") type="text" value="#{@candidate.BillingStreet}"
+    /! Text input
+    .control-group
+      label.control-label for="city"  Mailing City
+      .controls
+        input#city.input-xlarge name="city" placeholder=("New York") type="text" value="#{@candidate.BillingCity}"
+    /! Select Basic
+    .control-group
+      label.control-label for="state"  Mailing State
+      .controls
+        select#state.input-Xlarge name="state" 
+          option[selected=("selected" if @candidate.BillingState == "Alaska")] Alaska
+          option[selected=("selected" if @candidate.BillingState == "Alabama")] Alabama
+          option[selected=("selected" if @candidate.BillingState == "Arkansas")] Arkansas
+          option[selected=("selected" if @candidate.BillingState == "Arizona")] Arizona
+          option[selected=("selected" if @candidate.BillingState == "California")] California
+          option[selected=("selected" if @candidate.BillingState == "Colorado")] Colorado
+          option[selected=("selected" if @candidate.BillingState == "Connecticut")] Connecticut
+          option[selected=("selected" if @candidate.BillingState == "District of Columbia")] District of Columbia
+          option[selected=("selected" if @candidate.BillingState == "Delaware")] Delaware
+          option[selected=("selected" if @candidate.BillingState == "Florida")] Florida
+          option[selected=("selected" if @candidate.BillingState == "Georgia")] Georgia
+          option[selected=("selected" if @candidate.BillingState == "Hawaii")] Hawaii
+          option[selected=("selected" if @candidate.BillingState == "Iowa")] Iowa
+          option[selected=("selected" if @candidate.BillingState == "Idaho")] Idaho
+          option[selected=("selected" if @candidate.BillingState == "Illinois")] Illinois
+          option[selected=("selected" if @candidate.BillingState == "Indiana")] Indiana
+          option[selected=("selected" if @candidate.BillingState == "Kansas")] Kansas
+          option[selected=("selected" if @candidate.BillingState == "Kentucky")] Kentucky
+          option[selected=("selected" if @candidate.BillingState == "Louisiana")] Louisiana
+          option[selected=("selected" if @candidate.BillingState == "Massachusetts")] Massachusetts
+          option[selected=("selected" if @candidate.BillingState == "Maryland")] Maryland
+          option[selected=("selected" if @candidate.BillingState == "Maine")] Maine
+          option[selected=("selected" if @candidate.BillingState == "Michigan")] Michigan
+          option[selected=("selected" if @candidate.BillingState == "Minnesota")] Minnesota
+          option[selected=("selected" if @candidate.BillingState == "Missouri")] Missouri
+          option[selected=("selected" if @candidate.BillingState == "Mississippi")] Mississippi
+          option[selected=("selected" if @candidate.BillingState == "Montana")] Montana
+          option[selected=("selected" if @candidate.BillingState == "North Carolina")] North Carolina
+          option[selected=("selected" if @candidate.BillingState == "North Dakota")] North Dakota
+          option[selected=("selected" if @candidate.BillingState == "Nebraska")] Nebraska
+          option[selected=("selected" if @candidate.BillingState == "New Hampshire")] New Hampshire
+          option[selected=("selected" if @candidate.BillingState == "New Jersey")] New Jersey
+          option[selected=("selected" if @candidate.BillingState == "New Mexico")] New Mexico
+          option[selected=("selected" if @candidate.BillingState == "Nevada")] Nevada
+          option[selected=("selected" if @candidate.BillingState == "New York")] New York
+          option[selected=("selected" if @candidate.BillingState == "Ohio")] Ohio
+          option[selected=("selected" if @candidate.BillingState == "Oklahoma")] Oklahoma
+          option[selected=("selected" if @candidate.BillingState == "Oregon")] Oregon
+          option[selected=("selected" if @candidate.BillingState == "Pennsylvania")] Pennsylvania
+          option[selected=("selected" if @candidate.BillingState == "Rhode Island")] Rhode Island
+          option[selected=("selected" if @candidate.BillingState == "South Carolina")] South Carolina
+          option[selected=("selected" if @candidate.BillingState == "South Dakota")] South Dakota
+          option[selected=("selected" if @candidate.BillingState == "Tennessee")] Tennessee
+          option[selected=("selected" if @candidate.BillingState == "Texas")] Texas
+          option[selected=("selected" if @candidate.BillingState == "Utah")] Utah
+          option[selected=("selected" if @candidate.BillingState == "Virginia")] Virginia
+          option[selected=("selected" if @candidate.BillingState == "Vermont")] Vermont
+          option[selected=("selected" if @candidate.BillingState == "Washington")] Washington
+          option[selected=("selected" if @candidate.BillingState == "Wisconsin")] Wisconsin
+          option[selected=("selected" if @candidate.BillingState == "West Virginia")] West Virginia
+          option[selected=("selected" if @candidate.BillingState == "Wyoming")] Wyoming
+          
+    /! Text input
+    .control-group
+      label.control-label for="zip"  Mailing Zip
+      .controls
+        input#zip.input-small name="zip" placeholder="10021-40" type="text" value="#{@candidate.BillingPostalCode}"
+    /! Multiple Radios
+    .control-group
+      label.control-label for="packages"  Receive Packages at this address?
+      .controls
+        label.radio for="packages_yes" 
+          input#packages_yes name="packages" type="radio" value="Yes" checked=("checked" if @candidate.Receive_Packages_at_this_Address__c)
+            | Yes
+        label.radio for="packages_no" 
+          input#packages_no name="packages" type="radio" value="No" checked=("checked" if !@candidate.Receive_Packages_at_this_Address__c)
+            | No
+   
     /! Text input
     .control-group
       label.control-label for="professional_cleaning_experience"  Do you have professional cleaning experience?

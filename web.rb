@@ -49,6 +49,34 @@ class App < Sinatra::Base
 
   end
 
+  #quiz
+  get '/candidate_details/:encoded_id/quiz' do
+    #create sfdc connector
+    sfdc = Salesforce_Connector.new
+    @candidate = sfdc.get_candidate( 
+      params[:encoded_id]
+    )
+
+    @encoded_id = params[:encoded_id]
+
+    slim :candidate_quiz
+  end
+
+  post '/candidate_quiz_update' do
+    #create sfdc connector
+    sfdc = Salesforce_Connector.new
+
+    #pass the bindings
+    success = sfdc.update_quiz(params)
+
+    @success = "Record updated" if success 
+    @message = "Update failed" if !success
+    @info = params if !success
+    
+    slim :message
+  end
+
+  #standard details page
   get '/candidate_details/:encoded_id' do
     #create sfdc connector
     sfdc = Salesforce_Connector.new
@@ -72,6 +100,11 @@ class App < Sinatra::Base
     @message = "Update failed" if !success
     @info = params if !success
     
-    slim :message
+    if success 
+      redirect("/candidate_details/#{params[:encoded_id]}/quiz")
+    else
+      slim :message
+    end
+    
   end
 end
