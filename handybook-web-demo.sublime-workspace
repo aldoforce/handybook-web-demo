@@ -520,62 +520,26 @@
 	"buffers":
 	[
 		{
-			"file": "views/candidate_details.slim",
-			"settings":
-			{
-				"buffer_size": 11493,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "lib/Salesforce_Connector.rb",
 			"settings":
 			{
-				"buffer_size": 3887,
+				"buffer_size": 3899,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "web.rb",
+			"file": ".env",
 			"settings":
 			{
-				"buffer_size": 2210,
+				"buffer_size": 313,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/layout.slim",
-			"settings":
-			{
-				"buffer_size": 454,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/candidate_quiz.slim",
-			"settings":
-			{
-				"buffer_size": 597,
-				"line_ending": "Unix",
-				"name": "form.form-horizontal"
-			}
-		},
-		{
-			"file": "views/message.slim",
-			"settings":
-			{
-				"buffer_size": 427,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "handybook-web-demo\n========================\n\nQuick start with sinatra.",
 			"file": "README.md",
-			"file_size": 76,
-			"file_write_time": 130458028990000000,
 			"settings":
 			{
-				"buffer_size": 70,
+				"buffer_size": 340,
 				"line_ending": "Unix"
 			}
 		}
@@ -819,12 +783,14 @@
 	},
 	"file_history":
 	[
-		"/Users/aldo/dev/handybook_web/views/layout.slim",
-		"/Users/aldo/dev/handybook_web/views/message.slim",
+		"/Users/aldo/dev/handybook_web/.gitignore",
 		"/Users/aldo/dev/handybook_web/views/candidate_details.slim",
+		"/Users/aldo/dev/handybook_web/web.rb",
+		"/Users/aldo/dev/handybook_web/views/layout.slim",
+		"/Users/aldo/dev/handybook_web/views/candidate_quiz.slim",
+		"/Users/aldo/dev/handybook_web/views/message.slim",
 		"/Users/aldo/dev/handybook_web/views/apply.slim",
 		"/Users/aldo/dev/handybook_web/lib/Salesforce_Connector.rb",
-		"/Users/aldo/dev/handybook_web/web.rb",
 		"/Users/aldo/dev/wework.com.dev/rest_client/request_opportunityDetails.rb",
 		"/Users/aldo/dev/handybook_web/Gemfile",
 		"/Users/aldo/dev/handybook_web/views/login.slim",
@@ -944,9 +910,7 @@
 		"/Volumes/Perseus/salesforce/sof/classes/TemplateHandler.class.php",
 		"/Volumes/Perseus/wp-content/themes/theme_perseus/js/create-order.js",
 		"/Volumes/Perseus/salesforce/portal/inventory_form_2.php",
-		"/Volumes/Perseus/salesforce/portal/classes/PortalInventoryHandler.class.php",
-		"/Users/aldo/dev/perseus3.dev/src/components/OrdersHistory.component",
-		"/Users/aldo/dev/perseus3.dev/src/classes/OrdersHistoryController.cls"
+		"/Volumes/Perseus/salesforce/portal/classes/PortalInventoryHandler.class.php"
 	],
 	"find":
 	{
@@ -1141,54 +1105,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "views/candidate_details.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11493,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11195,
-								11296
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2594.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "lib/Salesforce_Connector.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3887,
+						"buffer_size": 3899,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								756,
-								773
+								134,
+								134
 							]
 						],
 						"settings":
@@ -1197,146 +1131,55 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 461.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "web.rb",
+					"buffer": 1,
+					"file": ".env",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2210,
+						"buffer_size": 313,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								171,
-								87
+								19,
+								19
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 5.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "views/layout.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 454,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								17,
-								17
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "views/candidate_quiz.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 597,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								110,
-								110
-							]
-						],
-						"settings":
-						{
-							"auto_name": "form.form-horizontal",
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "views/message.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 427,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								346,
-								345
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 2,
 					"file": "README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 70,
+						"buffer_size": 340,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								70,
-								70
+								182,
+								182
 							]
 						],
 						"settings":
@@ -1347,7 +1190,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
